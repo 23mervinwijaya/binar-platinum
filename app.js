@@ -6,7 +6,7 @@ const db = require("./db");
 const app = express();
 
 // Port Initiate
-const port = 3030;
+const port = 3900;
 
 // Middleware & View Engine
 app.set("view engine", "ejs");
