@@ -52,6 +52,22 @@ app.post('/product-register',async(req,res)=>{
   res.redirect('/product-register')
 })
 
+//menambahkan edit
+app.get('/product-register/edit=:id',async(req,res)=>{
+  const id = req.params.id
+  const importProducts = await db("products")
+    .select("*")
+    .where("id", id)
+    .first();
+  const productRaw = JSON.stringify(importProducts);
+  const products = JSON.parse(productRaw);
+  res.render('product-edit',{
+    layout : 'layouts/main-layout',
+    title : 'Edit Product',
+    products
+  })
+})
+
 
 app.get("/products", async (req, res) => {
   const importProducts = await db("products")
