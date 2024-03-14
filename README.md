@@ -1,4 +1,4 @@
-# binar-challenge-gold
+# binar-challenge-Platinum
 
 **Untuk Memulai**
 1. Konfigurasi database pada Knexfile.js
