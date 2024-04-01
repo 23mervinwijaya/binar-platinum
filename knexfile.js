@@ -8,11 +8,11 @@ module.exports = {
   development: {
     client: 'postgresql',
     connection: {
-      host : 'localhost',
+      host : '127.0.0.1',
       port : 5432,
-      database : 'crud_product',
-      user : 'admin',
-      password : 'admin'
+      database : 'ikea_db',
+      user : 'postgres',
+      password : 'root'
     },
     pool: {
       min: 2,
